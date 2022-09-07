@@ -1,0 +1,14 @@
+[package]
+name = "rad-track"
+version = "0.1.0"
+authors = ["The Radicle Team <dev@radicle.xyz>"]
+edition = "2018"
+license = "GPL-3.0-or-later"
+description = "Manage radicle project tracking relationships"
+
+[dependencies]
+lexopt = { version = "0.2" }
+anyhow = { version = "1.0" }
+librad = { version = "0" }
+radicle-terminal = { path = "../terminal" }
+radicle-common = { path = "../common" }

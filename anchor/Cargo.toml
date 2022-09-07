@@ -1,0 +1,19 @@
+[package]
+name = "rad-anchor"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+radicle-common = { path = "../common" }
+safe-transaction-client = { path = "../safe-transaction-client" }
+log = { version = "0.4" }
+lexopt = { version = "0.2" }
+ethers = { version = "0", features = ["ledger"] }
+link-identities = { version = "0" }
+serde_json = { version = "1" }
+anyhow = { version = "*" }
+multihash = { version = "0.14", features = ["sha1"] }
+rpassword = { version = "5.0" }
+colored = { version = "1.9" }
+thiserror = { version = "*" }
+coins-bip32 = { version = "*" }

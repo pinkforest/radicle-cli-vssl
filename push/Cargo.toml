@@ -1,0 +1,14 @@
+[package]
+name = "rad-push"
+version = "0.1.0"
+authors = ["The Radicle Team <dev@radicle.xyz>"]
+edition = "2018"
+license = "GPL-3.0-or-later"
+description = "Publish radicle projects to the network"
+
+[dependencies]
+anyhow = "1.0"
+lexopt = { version = "0.2" }
+radicle-common = { path = "../common" }
+radicle-terminal = { path = "../terminal" }
+rad-sync = { path = "../sync" }

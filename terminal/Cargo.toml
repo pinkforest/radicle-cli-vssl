@@ -1,0 +1,20 @@
+[package]
+name = "radicle-terminal"
+version = "0.1.0"
+edition = "2018"
+license = "GPL-3.0-or-later"
+
+[features]
+default = []
+ethereum = ["radicle-common/ethereum"]
+
+[dependencies]
+anyhow = "1.0"
+dialoguer = "0.10.0"
+indicatif = "0.16.2"
+console = "0.15"
+zeroize = "1.1"
+librad = { version = "0" }
+
+[dependencies.radicle-common]
+path = "../common"

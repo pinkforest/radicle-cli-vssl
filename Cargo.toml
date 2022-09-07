@@ -1,0 +1,101 @@
+[profile.ci]
+inherits = "dev"
+debug = 0
+incremental = false
+
+[profile.release]
+strip = true
+lto = true
+codegen-units = 1
+panic = "abort"
+
+[workspace]
+members = [
+  "anchor",
+  "account",
+  "terminal",
+  "common",
+  "checkout",
+  "cli",
+  "ens",
+  "auth",
+  "help",
+  "init",
+  "ls",
+  "rm",
+  "issue",
+  "patch",
+  "path",
+  "push",
+  "pull",
+  "remote",
+  "sync",
+  "self",
+  "inspect",
+  "track",
+  "untrack",
+  "gov",
+  "edit",
+  "reward",
+  "comment",
+]
+
+[patch.crates-io.link-crypto]
+git = "https://github.com/radicle-dev/radicle-link"
+tag = "cycle/2022-07-12"
+
+[patch.crates-io.link-identities]
+git = "https://github.com/radicle-dev/radicle-link"
+tag = "cycle/2022-07-12"
+
+[patch.crates-io.link-async]
+git = "https://github.com/radicle-dev/radicle-link"
+tag = "cycle/2022-07-12"
+
+[patch.crates-io.link-replication]
+git = "https://github.com/radicle-dev/radicle-link"
+tag = "cycle/2022-07-12"
+
+[patch.crates-io.radicle-git-helpers]
+git = "https://github.com/radicle-dev/radicle-link"
+tag = "cycle/2022-07-12"
+
+[patch.crates-io.librad]
+git = "https://github.com/radicle-dev/radicle-link"
+tag = "cycle/2022-07-12"
+
+[patch.crates-io.lnk-sync]
+git = "https://github.com/radicle-dev/radicle-link"
+tag = "cycle/2022-07-12"
+
+[patch.crates-io.lnk-clib]
+git = "https://github.com/radicle-dev/radicle-link"
+tag = "cycle/2022-07-12"
+
+[patch.crates-io.lnk-profile]
+git = "https://github.com/radicle-dev/radicle-link"
+tag = "cycle/2022-07-12"
+
+[patch.crates-io.radicle-git-ext]
+git = "https://github.com/radicle-dev/radicle-link"
+tag = "cycle/2022-07-12"
+
+[patch.crates-io.git-trailers]
+git = "https://github.com/radicle-dev/radicle-link"
+tag = "cycle/2022-07-12"
+
+[patch.crates-io.git-ref-format]
+git = "https://github.com/radicle-dev/radicle-link"
+tag = "cycle/2022-07-12"
+
+[patch.crates-io.lnk-identities]
+git = "https://github.com/radicle-dev/radicle-link"
+tag = "cycle/2022-07-12"
+
+[patch.crates-io.automerge]
+git = "https://github.com/automerge/automerge-rs"
+rev = "291557a019acac283e54ea31a9fad81ed65736ab"
+
+[patch.crates-io.libusb1-sys]
+git = "https://github.com/a1ien/rusb.git"
+rev = "050f5091c7b0fb69c0fc25edec0910abe8afadf1"

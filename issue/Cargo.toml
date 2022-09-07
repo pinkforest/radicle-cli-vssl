@@ -1,0 +1,16 @@
+[package]
+name = "rad-issue"
+version = "0.1.0"
+authors = ["The Radicle Team <dev@radicle.xyz>"]
+edition = "2018"
+license = "GPL-3.0-or-later"
+description = "Manage radicle issues"
+
+[dependencies]
+lexopt = { version = "0.2" }
+anyhow = { version = "1.0" }
+librad = { version = "0" }
+radicle-terminal = { path = "../terminal" }
+radicle-common = { path = "../common" }
+serde_yaml = { version = "0.8" }
+serde = { version = "1.0" }
